@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubeys Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Quiz Portal</h1>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="login">Login</button>
+      <button class="tab-btn" data-tab="register">Register</button>
+      <button class="tab-btn" data-tab="forgot">Forgot Password</button>
+    </div>
+
+    <!-- Login Tab Content -->
+    <div class="tab-content active" data-tab="login">
+      <form id="login-form">
+        <input type="email" placeholder="Email" id="login-email" required>
+        <input type="password" placeholder="Password" id="login-password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p id="login-error-msg"></p>
+    </div>
+
+    <!-- Registration Tab Content -->
+    <div class="tab-content" data-tab="register">
+      <form id="registration-form">
+        <input type="text" placeholder="Name" id="name" required>
+        <input type="email" placeholder="Email" id="register-email" required>
+        <input type="password" placeholder="Password" id="register-password" required>
+        <button type="submit">Register</button>
+      </form>
+      <p id="register-success-msg"></p>
+      <p id="register-error-msg"></p>
+    </div>
+
+    <!-- Forgot Password Tab Content -->
+    <div class="tab-content" data-tab="forgot">
+      <form id="forgot-form">
+        <input type="email" placeholder="Registered Email" id="forgot-email" required>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="forgot-msg"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
